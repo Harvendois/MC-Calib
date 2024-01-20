@@ -35,6 +35,14 @@ There are several ways to get the environment ready. Choose any of them:
       ```
    Both '*.sh' files are provided under the 'docs' directory for both production and development. 
    Simply run the docker commands by running either of the '*.sh' file. 
+
+   In order to use these *.sh files, the user only needs to change the 'PATH_TO_DATA' once. 
+   After having personalized the 'PATH_TO_DATA', use the command below:
+
+   ```bash
+   chmod +x MC-Calib/docs/calib_prod.sh # enable the use of this script as an executable.
+   ./MC-Calib/docs/calib_prod.sh #the directory should be changed relative to the user's current working directory.
+   ```
       
 2. It is also possible to build the docker environment manually:
    
