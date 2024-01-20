@@ -32,8 +32,9 @@ There are several ways to get the environment ready. Choose any of them:
                   --volume="${PWD}:/home/MC-Calib" \
                   --volume="PATH_TO_DATA:/home/MC-Calib/data" \
                   bailool/mc-calib-prod
-      #xhost -local:root  # resetting permissions
       ```
+   Both '*.sh' files are provided under the 'docs' directory for both production and development. 
+   Simply run the docker commands by running either of the '*.sh' file. 
       
 2. It is also possible to build the docker environment manually:
    

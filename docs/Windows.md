@@ -37,11 +37,11 @@ In order to avoid running the image manually every time, we can create a `*.ps1`
 
 
 ```bash
-Docker run `
-    -ti --rm `
-    --volume=”$(PWD):/home/MC-Calib” `
-    --volume=”PATH_TO_DATA:/home/MC-Calib/data” `
-    bailool/mc-calib-prod
+docker run `
+  -ti --rm `
+  --volume="${PWD}:/home/MC-Calib" `
+  --volume="PATH_TO_DATA:/home/MC-Calib/data" `
+  bailool/mc-calib-prod
 ```
 
 ### User Personalization
@@ -60,10 +60,11 @@ For example, if we choose to save our images in `D:\project\calibration\test\ima
 D:\project\calibration\test\images\Cam_001
 D:\project\calibration\test\images\Cam_002
 ```
-After personalization, user can run the '*.ps1' file in the Powershell/CMD/etc.
+After personalization, user can run either of the '*.ps1' file found under the 'docs' directory in the Powershell/CMD/etc.
 
 ```bash
-.\calib.ps1
+./docs/calib_prod.ps1 #for general use
+./docs/calib_dev.ps1 #for contribution
 ```
 
 ## Compiling the MC-Calib repository
